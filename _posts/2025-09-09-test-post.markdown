@@ -1,4 +1,5 @@
 ---
+layout: "post"
 ---
 
 Test Post to see if this will work.
