@@ -1,0 +1,56 @@
+---
+title: Blog
+layout: default
+---
+
+<!-- Main -->
+	<section class="wrapper style1">
+		<div class="container">
+			<div id="content">
+				<div class="row">
+					<div class="12u">
+						<!-- Blog -->
+							<section>
+								<header class="major">
+									<h2>The Blog</h2>
+								</header>
+								{% for post in paginator.posts %}
+									<div class="row">
+										<section class="12u">
+											<div class="box post">
+												<a href="#" class="image left"><img src="{{ site.baseurl }}{{ post.featured }}" alt=""></a>
+													<div class="inner">
+															<h3>{{ post.title }}</h3>
+															{{ post.excerpt }}
+															<footer>
+																<a href="{{ site.baseurl }}{{ post.url }}" class="button">Continue Reading</a>
+															</footer>
+													</div>
+											</div>
+										</section>
+									</div>
+								{% endfor %}
+								<!-- Pagination links -->
+									<div class="pagination">
+									{% if paginator.previous_page %}
+										<a href="{{ paginator.previous_page_path }}" class="previous">
+										Previous
+										</a>
+									{% else %}
+										<span class="previous">Previous</span>
+									{% endif %}
+									<span class="page_number ">
+										Page: {{ paginator.page }} of {{ paginator.total_pages }}
+									</span>
+									{% if paginator.next_page %}
+										<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+									{% else %}
+										<span class="next ">Next</span>
+									{% endif %}
+									</div>
+							</section>
+
+					</div>
+				</div>
+		</div>
+	</section>

@@ -2,6 +2,7 @@
 layout: "post"
 permalink: 
 categories: 
+featured: /assets/images/pic04.jpg
 ---
 
 Test Post to see if this will work.
