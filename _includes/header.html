@@ -31,21 +31,21 @@
 						
 				<!-- Logo -->
 					<!-- <h1><a href="{{ site.baseurl }}/index.html" id="logo">Scintilla <em>CME</em></a></h1> -->
-					 <a href="{{site.baseurl }}/index.html" style="color: #FFFFFF;"><img alt="Scintilla CME" src="{{ site.baseurl }}/assets/images/scintilla_logo_web_banner_no_background.png?w=960"></a>
+					 <a href="/" style="color: #FFFFFF;"><img alt="Scintilla CME" src="{{ site.baseurl }}/assets/images/scintilla_logo_web_banner_no_background.png?w=960"></a>
 				
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
 							<li>
 								<a href="">Technologies</a>
 								<ul>
-									<li><a href="{{ site.baseurl }}/alkaline-fuel-cell.html">Alkaline Fuel Cell</a></li>
-									<li><a href="{{ site.baseurl }}/anaerobic-digestion.html">Anaerobic Digestion</a></li>
-									<li><a href="{{ site.baseurl }}/carbon-capture.html">Carbon Capture</a></li>
-									<li><a href="{{ site.baseurl }}/gasification.html">Gasification</a></li>
-									<li><a href="{{ site.baseurl }}/gas-reformation.html">Gas Reformation</a></li>
+									<li><a href="{{ site.baseurl }}/technologies/alkaline-fuel-cell/">Alkaline Fuel Cell</a></li>
+									<li><a href="{{ site.baseurl }}/technologies/anaerobic-digestion/">Anaerobic Digestion</a></li>
+									<li><a href="{{ site.baseurl }}/technologies/carbon-capture/">Carbon Capture</a></li>
+									<li><a href="{{ site.baseurl }}/technologies/gasification/">Gasification</a></li>
+									<li><a href="{{ site.baseurl }}/technologies/gas-reformation/">Gas Reformation</a></li>
 									<!-- <li>
 										<a href="">Submenu</a>
 										<ul>
@@ -55,7 +55,7 @@
 								</ul>
 							</li>
 							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
-							<li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
+							<li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
 						</ul>
 					</nav>
 
