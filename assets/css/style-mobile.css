@@ -23,6 +23,11 @@
 		line-height: 1.35em;
 	}
 
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
 	header p {
 		margin-top: -0.5em;
 		font-size: 1em;
@@ -40,7 +45,7 @@
 			top: 0;
 			margin-top: 1.25em;
 			font-size: 1em;
-		}
+		} 
 
 /* Lists */
 
